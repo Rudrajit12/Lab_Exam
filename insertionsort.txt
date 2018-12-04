@@ -1,0 +1,10 @@
+Algorithm for Insertion Sort:
+
+1.	Repeat steps 2 to 5 for i = 1 to N - 1
+2.	Set Temp = Arr[i]
+3.	Set j = i - 1
+4.	Repeat while (Temp <= Arr[j] & j >= 0)
+		Set Arr[j+1] = Arr[j]
+		Set j = j - 1
+5.	Set Arr[j+1] = Temp
+6.	End

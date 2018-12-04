@@ -1,0 +1,28 @@
+Algorithm for Quicksort:
+
+1.	If Beg < End
+		Call Partition (Arr, Beg, End, Loc)
+		Call Quicksort (Arr, Beg, Loc-1)
+		Call Quicksort (Arr, Loc+1, End)
+2.	End
+
+Partition (Arr, Beg, End, Loc)
+
+1.	Set Left = Beg, Right = End, Loc = Beg, Flag = 0
+2.	Repeat steps 3 to 6 while Flag = 0
+3.	Repeat while Arr[Loc] <= Arr[Right] & Loc != Right
+		Set Right = Right - 1
+4.	If Loc = Right
+		Set Flag = 1
+	Else if Arr[Loc] > Arr[Right]
+		Swap Arr[Loc] with Arr[Right]
+		Set Loc = Right
+5.	If Flag = 0
+		Repeat while Arr[Loc] >= Arr[Left] & Loc != Left
+			Set Left = Left + 1
+6.	If Loc = Left
+		Set Flag = 1
+	Else if Arr[Loc] < Arr[Left]
+		Swap Arr[Loc] with Arr[Left]
+		Set Loc = Left
+7.	End

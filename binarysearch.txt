@@ -1,0 +1,15 @@
+Algorithm for Binary Search:
+
+1.	Set Beg = 0, End = n-1, Pos = -1
+2.	Repeat Steps 3 to 6 while (Beg <= End)
+3.		Set Mid = (Beg + End)/2
+4.			If A[Mid] = Val
+				Set Pos = Mid
+				Print Pos
+			Else if A[Mid] > Val
+				Set End = Mid - 1
+			Else
+				Set Beg = Mid + 1
+5.	If Pos = -1
+		Print Value not found
+6.	Exit

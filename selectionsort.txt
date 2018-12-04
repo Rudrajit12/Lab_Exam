@@ -1,0 +1,16 @@
+Algorithm for Selection Sort:
+
+1.	Repeat steps 2 to 3 for k = 1 to N - 1
+2.		Call Smallest(Arr,k,N,Pos)
+3.		Swap Arr[k] with Arr[Pos]
+4.	End
+
+Smallest(Arr,k,N,Pos)
+
+1.	Set Small = Arr[k]
+2.	Set Pos = k
+3.	Repeat for j = k + 1 to N - 1
+		If (Small > Arr[j])
+			Set Small = Arr[j]
+			Set Pos = j
+4.	Return Pos
