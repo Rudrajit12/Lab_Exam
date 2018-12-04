@@ -1,0 +1,5 @@
+After pushing your local changes to your remote repository, point your browser to your repository on Github.com.
+Click the Pull Requests tab.
+Click New pull request.
+In the base dropdown, select master.
+In the compare: dropdown, select the branch you recently pushed to the repository.
