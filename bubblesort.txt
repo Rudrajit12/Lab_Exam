@@ -1,0 +1,7 @@
+Algorithm for Bubble Sort:
+
+1.	Repeat step 2 for i = 0 to n - 1
+2.		Repeat for j = 0 to n - i
+3.			if(Arr[j] > Arr[j+1])
+				Swap Arr[j] and Arr[j+1]
+4.	End
